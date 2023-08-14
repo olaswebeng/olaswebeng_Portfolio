@@ -192,7 +192,7 @@ const About = () => {
         className='flex flex-col w-full xl:max-w-[48%] h-[380px] '>
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
               {
-                aboutData.map((item,itemIndex)=>{
+                aboutData.map((item:any,itemIndex)=>{
                   return(
                       <div 
                       key={itemIndex}
