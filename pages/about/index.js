@@ -22,13 +22,13 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html" />,
+        <FaCss3 key="css" />,
+        <FaJs key="js" />,
+        <FaReact key="react" />,
+        <SiNextdotjs key="nextjs" />,
+        <SiFramer key="framer" />,
+        <FaWordpress key="wordpress" />,
         ],
       },
       {
@@ -192,7 +192,7 @@ const About = () => {
         className='flex flex-col w-full xl:max-w-[48%] h-[380px] '>
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
               {
-                aboutData.map((item:any,itemIndex)=>{
+                aboutData.map((item,itemIndex)=>{
                   return(
                       <div 
                       key={itemIndex}
@@ -212,7 +212,7 @@ const About = () => {
           xl:gap-y-4 items-center xl:items-start
           '>
             {
-              aboutData[index].info.map((item:any,itemIndex:any)=>{
+              aboutData[index].info.map((item,itemIndex)=>{
                 return(
                   <div key={itemIndex}
                     className='flex-1 flex flex-col md:flex-row max-w-max  gap-x-2 
@@ -224,7 +224,7 @@ const About = () => {
                       <div>{item.stage}</div>
                       <div className='flex gap-x-4'>
                         {/* icons */}
-                        {item.icons?.map((icon:any,itemIndex:any)=>{
+                        {item.icons?.map((icon,itemIndex)=>{
                           return <div key={itemIndex} className='text-2xl text-white '>{icon}</div>
                         })}
                       </div>
