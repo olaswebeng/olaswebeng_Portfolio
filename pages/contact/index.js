@@ -15,7 +15,7 @@ const Contact = () => {
           items-center justify-center h-full'>
             <div className='flex flex-col w-full max-w-[700px] 
             '  >
-            <div className='overflow-auto max-h-[70vh]'> 
+            <div className='overflow-auto contact-con'> 
             {/* text */}
             <motion.h2
             variants={fadeIn('up',0.2)}

@@ -17,7 +17,21 @@
 .swiper-rtl .swiper-button-prev:after {
   color: #f13024;
 }
-
+@media screen and (max-width: 768px) {
+      .heading-main{
+        margin: 30% 0px 0px;
+      }
+      .client-heading
+      {
+        margin-top:"70%";
+      }
+      .contact-con
+      {
+        max-height: 70vh;
+        overflow-y: auto;
+      }
+      
+}
 @layer base {
   body {
     @apply bg-secondary overflow-hidden leading-relaxed;

@@ -23,7 +23,7 @@ const Home = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="h1" style={{fontSize:'6vh',margin:'30% 0 0 0'}}>
+        className="h1 heading-main" style={{fontSize:'6vh'}}>
             Transforming Ideas <br /> Into{' '}
             <span className="text-accent"> Digital Reality</span>
 
