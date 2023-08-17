@@ -15,13 +15,16 @@ const Contact = () => {
           items-center justify-center h-full'>
             <div className='flex flex-col w-full max-w-[700px] 
             '  >
+            <div className='overflow-auto max-h-[70vh]'> 
             {/* text */}
             <motion.h2
             variants={fadeIn('up',0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h2 text-center mb-12'>
+            className='h2 text-center mb-1'
+            style={{marginTop:'10vh'}}
+            >
                 Let's <span className='text-accent'>Connet</span>
             </motion.h2>
             {/* form */}
@@ -31,6 +34,7 @@ const Contact = () => {
                 animate='show'
                 exit='hidden'
                 action="" className='flex-1 flex flex-col gap-6 w-full mx-auto'>
+
                   <div className='flex gap-x-6 w-full'>
                     <input type="text" placeholder='Name' className='input' />
                     <input type="email" placeholder='Email' className='input' />
@@ -50,6 +54,7 @@ const Contact = () => {
                   '/>
                   </button>
                 </motion.form>
+            </div>
             </div>
           </div>
       </div>

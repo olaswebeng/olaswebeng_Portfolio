@@ -1,29 +1,25 @@
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: < RxDesktop/>,
+    title: 'Web Development',
+    description: 'Unlocking Excellence in Web Development.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Elevate Your Brand with Captivating Designs.',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxCrop />,
+    title: 'Management',
+    description: 'Seamless Client Management, Tailored for Success.',
   },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+  
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Elevating Your Online Presence with Effective SEO Strategies.',
   },
 ];
 
@@ -43,7 +39,9 @@ import
   RxArrowTopRight,
 } from 'react-icons/rx';
 
-import { FreeMode,Pagination } from 'swiper';
+import {FreeMode, Pagination } from 'swiper';
+import 'swiper/swiper-bundle.min.css';
+
 
 const ServiceSlider = () => {
   return (
@@ -62,7 +60,7 @@ const ServiceSlider = () => {
     pagination={{
       clickable:true
     }}
-    modules={{FreeMode, Pagination}}
+    modules={{ FreeMode,Pagination}}
     className='h-[240px] sm:h-[340px]'
     >
       {

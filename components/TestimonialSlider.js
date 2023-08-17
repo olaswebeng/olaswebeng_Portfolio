@@ -1,25 +1,32 @@
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
+    image: '/T1.png',
+    name: 'Khaleb',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Wonderful seller never had any issues always delivered my work on time with good prices and great work 10/10',
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
+    image: '/T2.png',
+    name: 'Capital Commerce',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'It has been an absolute outstanding pleasure working with Ahmad. ',
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
+    image: '/T3.png',
+    name: 'Freeman',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'He did a great job fixing my Python issue.',
+  },
+  {
+    image: '/T4.png',
+    name: 'Hamza',
+    position: 'Customer',
+    message:
+      'Had a really great first experience working with Ahmad.',
   },
 ];
  

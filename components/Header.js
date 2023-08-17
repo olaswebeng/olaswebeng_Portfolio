@@ -14,16 +14,24 @@ const Header = () => {
         ">
           {/* logo */}
           <Link href={'/'}>
-            <Image
+            <h1 style={{fontSize:'200%'}} className="text-accent">
+              <strong className="mx-2" style={{color:"white"}} >
+              Ahmad
+              </strong>
+              Jalal
+              <i style={{color:"white"}}>.</i>
+            </h1>
+            {/* <Image
             src={'/logo.svg'}
             width={220}
             height={48}
             alt=""
             priority={true}
-            />
+            /> */}
           </Link>
           {/* Socials */}
-          <Socials/>
+          <p style={{color:"white"}}>ahmadjalal110101@gmail.com | +92-347-7704011</p>
+          {/* <Socials/> */}
         </div>
     </div>
     

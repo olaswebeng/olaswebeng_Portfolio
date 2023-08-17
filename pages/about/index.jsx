@@ -5,8 +5,9 @@ import {
   FaJs ,
   FaReact , 
   FaWordpress,
-  FaFigma
-
+  FaNodeJs,
+  FaPython,
+  
 } from 'react-icons/fa'
 import {
   SiNextdotjs,
@@ -26,27 +27,27 @@ const aboutData = [
         <FaCss3 key="css" />,
         <FaJs key="js" />,
         <FaReact key="react" />,
-        <SiNextdotjs key="nextjs" />,
-        <SiFramer key="framer" />,
-        <FaWordpress key="wordpress" />,
+        <SiNextdotjs key="nextjs" />, 
+        <FaNodeJs key="nodejs" />,
+        <FaPython key="Python" />,
         ],
       },
-      {
-        title: 'UI/UX Design',
-        icons: [<FaFigma key="figma" />, <SiAdobexd key="adobe" />, <SiAdobephotoshop key="photoshop" />],
-      },
+      // {
+      //   title: 'UI/UX Design',
+      //   icons: [<FaFigma key="figma" />, <SiAdobexd key="adobe" />, <SiAdobephotoshop key="photoshop" />],
+      // },
     ],
   },
   {
     title: 'awards',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Softech Programming Competetion',
+        stage: '2023',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Aspire Appreciation',
+        stage: '2022',
       },
     ],
   },
@@ -54,34 +55,28 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Web Developer - Fiverr',
+        stage: '2020 - Ongoing',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Web Developer - PolymathKid Company',
+        stage: '2022 - 2023',
       },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
+      
     ],
   },
   {
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Intermediate - Punjab College, LHR, PK',
+        stage: '2020',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Software Eng. - FAST-NUCES, LHR, PK',
+        stage: '2024',
       },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
+       
     ],
   },
 ];
@@ -116,8 +111,8 @@ const About = () => {
           animate='show'
           exit='hidden'
           className='h2'
-          style={{fontSize:'6vh'}}>
-            Captivating <span className='text-accent'>Stories</span>
+          style={{fontSize:'4vh',margin:'20% 0 0 0'}}>
+            Captivating <span className='text-accent'>Stories </span>
             birth magnificent designs.
           </motion.h2>  
           <motion.p 
@@ -126,7 +121,7 @@ const About = () => {
           animate='show'
           exit='hidden'
           className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, aspernatur minus! Reiciendis saepe dolor numquam beatae, itaque libero sequi maxime, sed magni laudantium laboriosam quos ea, velit a facere aliquid!
+              "It is possible to fly without motors, but not without skils."
           </motion.p>
           {/* Counters */}
           <motion.div 
@@ -141,7 +136,7 @@ const About = () => {
                 after:bg-white/10 after:absolute after:top-0 after:right-0
                 '>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2 '>
-                    <CountUp start={0} end={10} duration={5}/>+
+                    <CountUp start={0} end={3} duration={5}/>+
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] '>
                     Years of Experience
@@ -152,7 +147,7 @@ const About = () => {
                 after:bg-white/10 after:absolute after:top-0 after:right-0
                 '>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2 '>
-                    <CountUp start={0} end={200} duration={5}/>+
+                    <CountUp start={0} end={100} duration={5}/>+
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] '>
                     Satisfied clients
@@ -163,7 +158,7 @@ const About = () => {
                 after:bg-white/10 after:absolute after:top-0 after:right-0
                 '>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2 '>
-                    <CountUp start={0} end={300} duration={5}/>+
+                    <CountUp start={0} end={150} duration={5}/>+
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] '>
                     Finished Projects

@@ -11,7 +11,8 @@ const Testimonials = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='h2 mb-8 xl:mb-0'>
+        className='h2 mb-8 xl:mb-0'
+        style={{marginTop:"30%",fontSize:'5vh'}}>
           What Clients  <span className='text-accent'>say</span>
         </motion.h2>
         {/* slider */}

@@ -6,6 +6,7 @@ import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../variants';
+import Link from "next/link";
 
 const Services = () => {
   return(
@@ -23,7 +24,7 @@ const Services = () => {
             animate='show'
             exit='hidden'
             className='h2 xl:mt-8 my-4'
-            style={{fontSize:"5vh"}}
+            style={{fontSize:"5vh",marginTop:'30%'}}
             >My Services
             <span className='text-accent'>.</span>
             </motion.h2> 
@@ -32,7 +33,9 @@ const Services = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='mb-4 max-w-[400px] mx-auto lg:mx-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus iusto aspernatur. Ad rerum earum aut itaque enim animi asperiores facilis fuga at ratione ullam, accusamus consequatur hic expedita reiciendis.</motion.p>
+            className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
+             What I can offers to you?
+              </motion.p>
           </div>
           <motion.div
           variants={fadeIn('down',0.6)}
@@ -42,6 +45,14 @@ const Services = () => {
           className='w-full xl:max-w-[65%]'>
           {/* Slider */}
           <ServiceSlider/>
+          <div className='text-center'>
+          <Link href='https://www.fiverr.com/s/q9L3og?utm_source=CopyLink_Mobile'
+          className='text-accent'
+          style={{margin:'0'}}>
+          Checkout on Fiverr
+          </Link>
+          </div>
+
           </motion.div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const Home = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="h1">
+        className="h1" style={{fontSize:'6vh',margin:'30% 0 0 0'}}>
             Transforming Ideas <br /> Into{' '}
             <span className="text-accent"> Digital Reality</span>
 
@@ -35,9 +35,11 @@ const Home = () => {
         exit='hidden'
         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
         >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error velit corporis, dolore, obcaecati ea dignissimos, corrupti dolorem alias architecto eos eligendi. Aut velit, harum sequi fuga nostrum eum voluptas vitae?
-        </motion.p>
-        <div className="flex justify-center xl:hidden relative">
+         Web developer specialized in front end development. Well diversified in numerous programming 
+          languages and technologies including HTML, CSS, OOP, JavaScript, Node JS, Python, 
+          Django, MERN Stack, MySQL. 
+         </motion.p>
+        {/* <div className="flex justify-center xl:hidden relative">
           <ProjectsBtn/>
         </div>
         <motion.div 
@@ -46,10 +48,10 @@ const Home = () => {
         animate='show'
         exit='hidden'
         className="hidden xl:flex"
-
+        // style={{width:"1vh",height:'1vh'}}
         >
           <ProjectsBtn/>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
     
