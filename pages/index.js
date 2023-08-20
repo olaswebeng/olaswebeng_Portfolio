@@ -23,7 +23,7 @@ const Home = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="h1 heading-main" style={{fontSize:'5vh'}}>
+        className="h1 heading-main" >
             Transforming Ideas <br /> Into{' '}
             <span className="text-accent"> Digital Reality</span>
 
@@ -64,7 +64,7 @@ const Home = () => {
         {/* particles */}
         <ParticlesContainer/>
       {/* Avatar Image */}
-        <motion.div className="w-full h-full max-w-[537px] max-h-[478px] absolute -bottom-32
+        <motion.div className="w-full h-full max-w-[637px] max-h-[578px] absolute -bottom-32
         lg:bottom-0 lg:right-[8%]  
         "
         variants={fadeIn('up', 0.5)}

@@ -17,9 +17,17 @@
 .swiper-rtl .swiper-button-prev:after {
   color: #f13024;
 }
+.aboutText{
+  font-size: 6vh;
+  margin: 0% 0 0 0;
+}
+.heading-main{
+font-size: 8vh;
+}
 @media screen and (max-width: 768px) {
       .heading-main{
         margin: 30% 0px 0px;
+        font-size: 5vh;
       }
       .client-heading
       {
@@ -34,6 +42,10 @@
       {
         max-height: 50vh;
         overflow-y: auto;
+      }
+      .aboutText{
+        font-size: 4vh;
+        margin: 20% 0 0 0;
       }
 }
 @layer base {

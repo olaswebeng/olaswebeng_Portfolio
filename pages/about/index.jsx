@@ -98,8 +98,8 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className='hidden xl:flex absolute bottom-0 -left-[370px] '>
-      <Avatar/>
+    className='hidden xl:flex absolute bottom-0 -left-[270px] '>
+      {/* <Avatar/> */}
     </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row
       gap-x-6
@@ -110,8 +110,8 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='h2'
-          style={{fontSize:'4vh',margin:'20% 0 0 0'}}>
+          className='h2 aboutText'
+          >
             Captivating <span className='text-accent'>Stories </span>
             birth magnificent designs.
           </motion.h2>  
