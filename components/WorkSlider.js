@@ -4,40 +4,41 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'ECommern',
+          path: '/p1.png',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'Food Delivering',
+          path: '/p2.png',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Esports',
+          path: '/p3.png',
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Cinema WebApp',
+          path: '/cine.png',
         },
       ],
     },
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+         
+          title: 'Cinema WebApp',
+          path: '/cine.png',
         },
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'ECommern',
+          path: '/p1.png',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'Food Delivering',
+          path: '/p2.png',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Esports',
+          path: '/p3.png',
         },
       ],
     },
@@ -96,7 +97,9 @@ const WorkSlider = () => {
                         text-[13px] tracking-[0.2em]
                         '>
                           {/* title part1 */}
-                          <div className='delay-100'>LIVE</div>
+                          <div className='delay-100' 
+                          style={{textTransform:'uppercase'}}
+                          >{image.title}</div>
                           {/* title part2 */}
                           <div className='translate-y-[500%] 
                           group-hover:translate-y-0 transition-all duration-300
