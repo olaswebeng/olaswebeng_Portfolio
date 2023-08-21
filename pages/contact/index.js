@@ -16,10 +16,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_0nhg9xc', 
+    emailjs.sendForm('service_8b1tmvb', 
          'template_mpnx5zm', 
          form.current, 
-         'sK6o7Rt8wiHUf6rhD')
+         'P0xsNsNTFQBlZTnEa')
       .then((result) => {
           console.log(result.text);
           console.log('message sent.')
