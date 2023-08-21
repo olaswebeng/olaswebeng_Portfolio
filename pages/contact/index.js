@@ -9,7 +9,8 @@ import { fadeIn } from '../../variants';
 import { useState } from 'react';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
   const form = useRef();
 
@@ -22,9 +23,24 @@ const Contact = () => {
          'P0xsNsNTFQBlZTnEa')
       .then((result) => {
           console.log(result.text);
-          console.log('message sent.')
+          toast.success('Email sent successfully!', {
+            position: 'top-center',
+            autoClose: 3000, // Duration in milliseconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
       }, (error) => {
           console.log(error.text);
+          toast.error('Email does not sent!', {
+            position: 'top-center',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
       });
   };
 
@@ -60,11 +76,11 @@ const Contact = () => {
                   
 
                   <div className='flex gap-x-6 w-full'>
-                    <input type="text" name='user_name' placeholder='Name' className='input' />
-                    <input type="email" name='user_email' placeholder='Email'   className='input' />
+                    <input required type="text" name='user_name' placeholder='Name' className='input' />
+                    <input required type="email" name='user_email' placeholder='Email'   className='input' />
                   </div>
-                  <input type="text" name="subject"  placeholder='Subject' className='input' id="" />
-                  <textarea placeholder='message' name='message'className='textarea' cols="30" rows="10"></textarea>
+                  <input required type="text" name="subject"  placeholder='Subject' className='input' id="" />
+                  <textarea required placeholder='message' name='message'className='textarea' cols="30" rows="10"></textarea>
                   <button className='btn rounded-full border border-white/50 max-w-[170px] px-9
                   transition-all duration-300 flex items-center justify-center overflow-hidden
                   hover:border-accent group

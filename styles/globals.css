@@ -56,6 +56,14 @@ font-size: 8vh;
         justify-content: center;
         /* padding: 1vh 1vh 0 1vh */
       }
+      .Toastify__toast {
+        max-width: 250px; /* Set the desired width */
+      }
+      .Toastify__toast-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
 }
 @layer base {
   body {
