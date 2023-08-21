@@ -6,9 +6,28 @@ import { motion } from 'framer-motion';
 
 
 import { fadeIn } from '../../variants';
-
+import { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0nhg9xc', 
+         'template_mpnx5zm', 
+         form.current, 
+         'sK6o7Rt8wiHUf6rhD')
+      .then((result) => {
+          console.log(result.text);
+          console.log('message sent.')
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
       <div className='h-full bg-primary/30'>
           <div className='container mx-auto py-32 text-center xl:text-left flex
@@ -33,14 +52,19 @@ const Contact = () => {
                 initial='hidden'
                 animate='show'
                 exit='hidden'
-                action="" className='flex-1 flex flex-col gap-6 w-full mx-auto'>
+                action="" 
+                className='flex-1 flex flex-col gap-6 w-full mx-auto'
+                onSubmit={sendEmail}
+                ref={form}
+                >
+                  
 
                   <div className='flex gap-x-6 w-full'>
-                    <input type="text" placeholder='Name' className='input' />
-                    <input type="email" placeholder='Email' className='input' />
+                    <input type="text" name='user_name' placeholder='Name' className='input' />
+                    <input type="email" name='user_email' placeholder='Email'   className='input' />
                   </div>
-                  <input type="text" name="" placeholder='Subject' className='input' id="" />
-                  <textarea placeholder='message' className='textarea' cols="30" rows="10"></textarea>
+                  <input type="text" name="subject"  placeholder='Subject' className='input' id="" />
+                  <textarea placeholder='message' name='message'className='textarea' cols="30" rows="10"></textarea>
                   <button className='btn rounded-full border border-white/50 max-w-[170px] px-9
                   transition-all duration-300 flex items-center justify-center overflow-hidden
                   hover:border-accent group
