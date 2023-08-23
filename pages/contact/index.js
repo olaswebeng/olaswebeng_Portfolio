@@ -60,7 +60,7 @@ const Contact = () => {
             className='h2 text-center mb-1'
             style={{marginTop:'10vh'}}
             >
-                Let's <span className='text-accent'>Connet</span>
+                Let's <span className='text-accent'>Connect</span>
             </motion.h2>
             {/* form */}
                 <motion.form 

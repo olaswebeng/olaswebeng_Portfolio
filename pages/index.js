@@ -35,7 +35,7 @@ const Home = () => {
         exit='hidden'
         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
         >
-         Web developer specialized in front end development. Well diversified in numerous programming 
+         Web developer specialized in frontend & backend development. Well diversified in numerous programming 
           languages and technologies including HTML, CSS, OOP, JavaScript, Node JS, Python, 
           Django, MERN Stack, MySQL. 
          </motion.p>
