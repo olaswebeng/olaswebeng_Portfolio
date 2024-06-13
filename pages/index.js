@@ -24,7 +24,7 @@ const Home = () => {
         animate='show'
         exit='hidden'
         className="h1 heading-main" >
-            Transforming Ideas <br /> Into{' '}
+            Transforming Ideas<br /> Into{' '}
             <span className="text-accent"> Digital Reality</span>
 
         </motion.h1>
@@ -35,9 +35,8 @@ const Home = () => {
         exit='hidden'
         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
         >
-         Web developer specialized in frontend & backend development. Well diversified in numerous programming 
-          languages and technologies including HTML, CSS, OOP, JavaScript, Node JS, Python, 
-          Django, MERN Stack, MySQL. 
+         
+         We specialize in frontend and backend development, and are well-versed in numerous programming languages and technologies, including HTML, CSS, OOP, JavaScript, AJAX, Django, the MERN stack, RESTful APIs, GraphQL, full stack development, and databases such as MySQL, PostgreSQL, and MongoDB.
          </motion.p>
         {/* <div className="flex justify-center xl:hidden relative">
           <ProjectsBtn/>

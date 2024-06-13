@@ -1,10 +1,7 @@
 import Circles from '/components/Circles'
 
 import { BsArrowRight } from 'react-icons/bs';
-
 import { motion } from 'framer-motion';
-
-
 import { fadeIn } from '../../variants';
 import { useState } from 'react';
 import React, { useRef } from 'react';

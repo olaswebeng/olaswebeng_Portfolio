@@ -57,11 +57,11 @@ const Services = () => {
           {/* Slider */}
           <ServiceSlider/>
           <div className='text-center'>
-          <Link href='https://www.fiverr.com/s/q9L3og?utm_source=CopyLink_Mobile'
+          {/* <Link href=''
           className='text-accent'
           style={{margin:'0'}}>
-          Checkout on Fiverr
-          </Link>
+          Checkout on ABC
+          </Link> */}
           </div>
           </motion.div>
         </div>

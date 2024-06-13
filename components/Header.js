@@ -16,21 +16,15 @@ const Header = () => {
           <Link href={'/'}>
             <h1 style={{fontSize:'200%'}} className="text-accent">
               <strong className="mx-2" style={{color:"white"}} >
-              Ahmad
+              Ola
               </strong>
-              Jalal
+              Ogundari
               <i style={{color:"white"}}>.</i>
             </h1>
-            {/* <Image
-            src={'/logo.svg'}
-            width={220}
-            height={48}
-            alt=""
-            priority={true}
-            /> */}
+        
           </Link>
           {/* Socials */}
-          <p style={{color:"white"}}>ahmadjalal110101@gmail.com | +92-347-7704011</p>
+          <p style={{color:"white"}}>ogundarioa@gmail.com | +447460420327</p>
           {/* <Socials/> */}
         </div>
     </div>

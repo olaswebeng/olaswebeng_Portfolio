@@ -4,44 +4,47 @@ const workSlides = {
     {
       images: [
         {
-          title: 'ECommern',
-          path: '/p1.png',
+          title: 'Energy management',
+          path: '/W1.png',
+          link: 'https://subtle-crowbar-426023-j0.df.r.appspot.com/',
         },
         {
-          title: 'Food Delivering',
-          path: '/p2.png',
+          title: 'Cantor College',
+          path: '/W2.png',
+          link:'https://cantor-426213.df.r.appspot.com/',
         },
         {
-          title: 'Esports',
-          path: '/p3.png',
+          title: 'HMS',
+          path: '/W3.png',
+          link:''
         },
         {
-          title: 'Cinema WebApp',
-          path: '/cine.png',
+          title: 'Ivision Sports',
+          path: '/W4.png',
+          link:'https://ivisionsport.com/'
         },
       ],
     },
-    {
-      images: [
-        {
-         
-          title: 'Cinema WebApp',
-          path: '/cine.png',
-        },
-        {
-          title: 'ECommern',
-          path: '/p1.png',
-        },
-        {
-          title: 'Food Delivering',
-          path: '/p2.png',
-        },
-        {
-          title: 'Esports',
-          path: '/p3.png',
-        },
-      ],
-    },
+    // {
+    //   images: [
+    //     {
+    //       title: 'Energy management',
+    //       path: '/w1.png',
+    //     },
+    //     {
+    //       title: 'Cantor College',
+    //       path: '/w2.png',
+    //     },
+    //     {
+    //       title: 'HMS',
+    //       path: '/w3.png',
+    //     },
+    //     {
+    //       title: 'Ivision Sports',
+    //       path: '/w4.png',
+    //     },
+    //   ],
+    // },
   ],
 };
  
@@ -56,7 +59,6 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
 import { BsArrowRight } from 'react-icons/bs';
 import Image from 'next/image';
-
 
 const WorkSlider = () => {
   return (
@@ -99,7 +101,9 @@ const WorkSlider = () => {
                           {/* title part1 */}
                           <div className='delay-100' 
                           style={{textTransform:'uppercase'}}
-                          >{image.title}
+                          >
+                            <a href={image.link}> {image.title}</a>
+                            
                           </div>
                           {/* title part2 */}
                           {/* <div className='translate-y-[500%] 

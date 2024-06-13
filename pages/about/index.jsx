@@ -15,7 +15,11 @@ import {
   SiAdobexd,
   SiAdobephotoshop
 } from 'react-icons/si'
-// //  data
+import { SiMysql, SiPostgresql, SiMongodb, SiDocker, SiCsharp } from 'react-icons/si';
+import { DiUikit } from 'react-icons/di';
+import { AiOutlineCloudServer, AiOutlineProject } from 'react-icons/ai';
+
+
 const aboutData = [
   {
     title: 'skills',
@@ -32,49 +36,80 @@ const aboutData = [
         <FaPython key="Python" />,
         ],
       },
-      // {
-      //   title: 'UI/UX Design',
-      //   icons: [<FaFigma key="figma" />, <SiAdobexd key="adobe" />, <SiAdobephotoshop key="photoshop" />],
-      // },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
       {
-        title: 'Softech Programming Competetion',
-        stage: '2023',
+        title: 'Database and System Modelling',
+        icons: [
+          <SiMysql key="mysql" />,
+          <SiPostgresql key="postgresql" />,
+          <SiMongodb key="mongodb" />,
+          <DiUikit key="uikit" />, // Representing UCD and CD
+          <AiOutlineCloudServer key="server" /> // Representing ERD and system modeling
+        ]
       },
       {
-        title: 'Aspire Appreciation',
-        stage: '2022',
+        title: 'Software Project',
+        icons: [
+          <AiOutlineProject key="project" />, // Representing project management and software projects
+          <SiDocker key="docker" />
+        ]
+      },
+      {
+        title: 'Programming - C#, Python',
+        icons: [
+          <SiCsharp key="csharp" />, // Representing C#
+          <FaPython key="python" /> // Representing Python
+        ]
       },
     ],
   },
+  // {
+  //   title: 'awards',
+  //   info: [
+  //     {
+  //       title: 'Softech Programming Competetion',
+  //       stage: '2023',
+  //     },
+  //     {
+  //       title: 'Aspire Appreciation',
+  //       stage: '2022',
+  //     },
+  //   ],
+  // },
   {
     title: 'experience',
     info: [
       {
-        title: 'Web Developer - Fiverr',
-        stage: '2020 - Ongoing',
+        title: 'Web developer',
+        stage: '2015 - Ongoing',
       },
       {
-        title: 'Web Developer - PolymathKid Company',
-        stage: '2022 - 2023',
+        title: 'MSSQL DBA/ SQL Developer- Oak Management',
+        stage: '2015 - 2017',
       },
-      
+      {
+        title: 'Azure SQL Developer- Vasty Limited',
+        stage: '2018 - 2022',
+      },
+      {
+        title: 'Junior DBA/SQL Developer - HP/HSBC',
+        stage: '2022- 2022 ',
+      },
+      {
+        title: 'Data Engineer/SQL Developer -Vasty Limited',
+        stage: '2022-2023',
+      },
     ],
   },
   {
     title: 'credentials',
     info: [
       {
-        title: 'Intermediate - Punjab College, LHR, PK',
-        stage: '2020',
+        title: 'Intermediate - StayAhead College, London',
+        stage: '2015',
       },
       {
-        title: 'Software Eng. - FAST-NUCES, LHR, PK',
-        stage: '2024',
+        title: 'Software Eng.-Sheffield Hallam University, London',
+        stage: '2023',
       },
        
     ],
@@ -121,7 +156,7 @@ const About = () => {
           animate='show'
           exit='hidden'
           className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-              "It is possible to fly without motors, but not without skils."
+              "Harnessing Technology and Diligence to Reach New Horizons."
           </motion.p>
           {/* Counters */}
           <motion.div 
