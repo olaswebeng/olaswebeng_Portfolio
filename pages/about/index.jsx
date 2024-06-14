@@ -219,7 +219,7 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='flex flex-col w-full xl:max-w-[48%] h-[380px] '>
+        className='flex flex-col w-full xl:max-w-[48%] h-[380px] contact-con'>
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
               {
                 aboutData.map((item,itemIndex)=>{

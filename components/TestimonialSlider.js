@@ -1,14 +1,14 @@
 // testimonial data
 const testimonialData = [
   {
-    image: '/t3.png',
+    image: '/Testimonal.png',
     name: 'Williams',
     position: 'Customer',
     message:
       'The service provided was exceptional, consistently delivering work on time and at reasonable prices. The quality of work was great, and the customer service experience was excellent. No issues were ever encountered.',
   },
   {
-    image: '/t2.png',
+    image: '/Testimonal.png',
     name: 'Yemi',
     position: 'Customer',
     message:
