@@ -16,7 +16,7 @@ const workSlides = {
         {
           title: 'HMS',
           path: '/W3.png',
-          link:''
+          link:'https://hmsphp.df.r.appspot.com/'
         },
         {
           title: 'Ivision Sports',

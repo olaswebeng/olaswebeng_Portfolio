@@ -14,10 +14,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_8b1tmvb', 
-         'template_mpnx5zm', 
+    emailjs.sendForm('service_d32amu3', 
+         'template_u1uarwf', 
          form.current, 
-         'P0xsNsNTFQBlZTnEa')
+         'QnCGItxcdifblj7fl')
       .then((result) => {
           console.log(result.text);
           toast.success('Email sent successfully!', {

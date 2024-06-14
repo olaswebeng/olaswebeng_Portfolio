@@ -1,33 +1,33 @@
 // testimonial data
 const testimonialData = [
   {
-    image: '/T1.png',
-    name: 'Khaleb',
+    image: '/t3.png',
+    name: 'Williams',
     position: 'Customer',
     message:
-      'Wonderful seller never had any issues always delivered my work on time with good prices and great work 10/10',
+      'The service provided was exceptional, consistently delivering work on time and at reasonable prices. The quality of work was great, and the customer service experience was excellent. No issues were ever encountered.',
   },
   {
-    image: '/T2.png',
-    name: 'Capital Commerce',
+    image: '/t2.png',
+    name: 'Yemi',
     position: 'Customer',
     message:
-      'It has been an absolute outstanding pleasure working with Ahmad. ',
+      'The service always delivered good work on time and at fair prices. The professionalism and customer service were excellent, making the experience smooth and easy.',
   },
-  {
-    image: '/T3.png',
-    name: 'Freeman',
-    position: 'Customer',
-    message:
-      'He did a great job fixing my Python issue.',
-  },
-  {
-    image: '/T4.png',
-    name: 'Hamza',
-    position: 'Customer',
-    message:
-      'Had a really great first experience working with Ahmad.',
-  },
+  // {
+  //   image: '/T3.png',
+  //   name: 'Freeman',
+  //   position: 'Customer',
+  //   message:
+  //     'He did a great job fixing my Python issue.',
+  // },
+  // {
+  //   image: '/T4.png',
+  //   name: 'Hamza',
+  //   position: 'Customer',
+  //   message:
+  //     'Had a really great first experience working with Ahmad.',
+  // },
 ];
  
 import {Swiper,SwiperSlide} from 'swiper/react';
